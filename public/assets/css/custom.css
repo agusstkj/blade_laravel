@@ -1,0 +1,50 @@
+/* Modal */
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+.modal-body {
+    position:relative;
+    padding:0px;
+}
+.close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+}
+/* END Modal */
+
+/* Text Primary */
+.text-primary {
+    color: #001c54 !important;
+}
+
+/*hover color menu */
+.cbp-l-caption-body.menu5pilar {
+    background: #305069;
+}
+
+.cbp-l-caption-body.eMarriage {
+    background: #990063;
+}
+
+.cbp-l-caption-body.eParenting {
+    background: #967903;
+}
+
+.cbp-l-caption-body.eDugames {
+    background:  #945b05;
+}
+
+.cbp-l-caption-body.eFit {
+    background:  #891016;
+}
+
+.cbp-l-caption-body.eBusiness {
+    background:  #675e32;
+}
