@@ -26,15 +26,15 @@
         @include('layouts.header.nav')
 @endsection
 
-@section('heroSection')
+@section('mainSection1')
     @include('layouts.main.heroSection')
 @endsection
 
-@section('blogCard')
+@section('mainSection2')
     @include('layouts.main.blogCard')
 @endsection
 
-@section('subscribe')
+@section('mainSection3')
     @include('layouts.main.subscribe')
 @endsection
 

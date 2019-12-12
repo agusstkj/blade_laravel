@@ -48,3 +48,15 @@
 .cbp-l-caption-body.eBusiness {
     background:  #675e32;
 }
+
+.u-header__section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li span{
+    color: #77838f;
+    line-height: 1.7;
+}

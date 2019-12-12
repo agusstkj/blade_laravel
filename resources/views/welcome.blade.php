@@ -81,7 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                <!-- @foreach($articles as $a)
+                {{$a->content_article}}
+                @endforeach -->
+                <?php
+                print_r($articles);
+                ?>
                 </div>
 
                 <div class="links">

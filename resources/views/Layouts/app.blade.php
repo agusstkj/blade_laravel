@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Blog - @yield('title')</title>
+  <title>5pilar.id - @yield('title')</title>
   
   <!-- Required Meta Tags Always Come First -->
 @section('meta')
@@ -21,6 +21,9 @@
   
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
+
+  <!-- CSS Custome -->
+  <link rel="stylesheet" href="../../assets/css/custom.css">
 </head>
 <body>
   <!-- ========== HEADER ========== -->
@@ -28,21 +31,42 @@
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN ========== -->
-  <main id="content" role="main">
-    <!-- Hero Section -->
-@section('heroSection')
+  <main id="content" role="main" class="mt-10">
+    <!-- Main Section 1 -->
+@section('mainSection1')
 @show
-    <!-- End Hero Section -->
+    <!-- END Main Section 1 -->
 
-    <!-- Blog Card Section -->
-@section('blogCard')
+    <!-- Main Section 2 -->
+@section('mainSection2')
 @show
-    <!-- End Blog Card Section -->
+    <!-- END Main Section 2 -->
 
-    <!-- Subscribe Section -->
-@section('subscribe')
+    <!-- Main Section 3 -->
+@section('mainSection3')
 @show
-    <!-- End Subscribe Section -->
+    <!-- END Main Section 3 -->
+
+    <!-- Main Section 4 -->
+@section('mainSection4')
+@show
+    <!-- END Main Section 4 -->
+    
+    <!-- Main Section 5 -->
+@section('mainSection5')
+@show
+    <!-- END Main Section 5 -->
+
+    <!-- Main Section 6 -->
+@section('mainSection6')
+@show
+    <!-- END Main Section 6 -->
+
+    <!-- Main Section 7 -->
+@section('mainSection7')
+@show
+    <!-- END Main Section 7 -->
+
   </main>
   <!-- ========== END MAIN ========== -->
 
@@ -389,11 +413,28 @@
         }
       });
 
+      // initialization of fancybox
+      $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
       // initialization of malihu scrollbar
       $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
 
       // initialization of show animations
       $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: [" <i class=\"fa fa-quote-left fa-sm\"></i> Ayah terlibat, anak jadi hebat, rejeki manfaat dunia dan akhirat. <i class=\"fa fa-quote-right fa-sm\"></i> "],
+        typeSpeed: 60,
+        loop: true,
+        backSpeed: 25,
+        backDelay: 1500
+      });
+
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
 
       // initialization of form validation
       $.HSCore.components.HSValidation.init('.js-validate', {
@@ -407,9 +448,16 @@
       // initialization of forms
       $.HSCore.components.HSFocusState.init();
 
+      // initialization of cubeportfolio
+      $.HSCore.components.HSCubeportfolio.init('.cbp');
+      
+      // initialization of sticky blocks
+      $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>
+
 </body>
 </html>
